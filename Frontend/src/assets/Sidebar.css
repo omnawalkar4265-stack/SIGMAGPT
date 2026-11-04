@@ -1,0 +1,214 @@
+.sidebar {
+    box-sizing: border-box;
+    background-color: #171717;
+    color: #b4b4b4;
+    height: 100vh;
+    width: 260px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 12px;
+}
+
+.logo-header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    width: 100%;
+    min-height: 44px;
+    padding: 3px 5px 3px 3px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: #222;
+    margin-bottom: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    padding: 4px;
+    color: #f5f5f5;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+
+.new-chat-button {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #d7d7d7;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.new-chat-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.new-chat-option {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 42px;
+    margin-bottom: 12px;
+    padding: 0 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background-color: #222;
+    color: #e7e7e7;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.new-chat-option:hover {
+    background-color: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.new-chat-option i {
+    color: #b4b4b4;
+}
+
+.storage-error {
+    margin: -8px 4px 12px;
+    color: #ff8a8a;
+    font-size: 0.75rem;
+}
+
+.history{
+    margin-top: 0;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.history::-webkit-scrollbar {
+    display: none;
+}
+
+.history ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 240px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.history ul::-webkit-scrollbar {
+    display: none;
+}
+
+.history li {
+    min-width: 0;
+}
+
+.history-item {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 9px 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #c8c8c8;
+    font: inherit;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.history-item:hover,
+.history-item.active {
+    background-color: rgba(180, 180, 180, 0.1);
+    color: #fff;
+}
+
+.clear-history-button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 38px;
+    margin-top: 8px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #d98b8b;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+}
+
+.clear-history-button:hover:not(:disabled) {
+    background-color: rgba(255, 100, 100, 0.1);
+    color: #ffaaaa;
+}
+
+.clear-history-button:disabled {
+    color: #777;
+    cursor: not-allowed;
+}
+
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: auto 0 0;
+    padding: 14px 0 4px;
+    font-size: 14px;
+    color: #b4b4b4;
+    border-top: 1px solid rgba(180, 180, 180, 0.1);
+}
+
+.sign p {
+    margin: 0;
+}
+
+.heart {
+    color: red;
+    font-size: 16px;
+    line-height: 1;
+}
